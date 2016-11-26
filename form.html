@@ -27,24 +27,24 @@
           <!-- Запасись терпением, пожалуйста... Дальше все очень плохо! -->
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">Тип</legend>
-            <input class="input order-form__input--radio" type="radio" name="type" id="accessory" value="accessory" checked>
+            <input class="input input--radio order-form__input" type="radio" name="type" id="accessory" value="accessory" checked>
             <label class="label order-form__label" for="accessory">Аксессуар для интерьера</label>
-            <input class="input order-form__input--radio" type="radio" name="type" id="toy" value="toy">
+            <input class="input input--radio order-form__input" type="radio" name="type" id="toy" value="toy">
             <label class="label order-form__label" for="toy">Детская игрушка</label>
           </fieldset>
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">Цвет</legend>
-            <input class="input order-form__input--checkbox" type="checkbox" name="white" id="white" checked>
+            <input class="input input--checkbox order-form__input" type="checkbox" name="white" id="white" checked>
             <label class="label order-form__label" for="white">Белый</label>
-            <input class="input order-form__input--checkbox" type="checkbox" name="gray" id="gray" checked>
+            <input class="input input--checkbox order-form__input" type="checkbox" name="gray" id="gray" checked>
             <label class="label order-form__label" for="gray">Серый</label>
-            <input class="input order-form__input--checkbox" type="checkbox" name="tiffany" id="tiffany">
+            <input class="input input--checkbox order-form__input" type="checkbox" name="tiffany" id="tiffany">
             <label class="label order-form__label" for="tiffany">«Тиффани»</label>
-            <input class="input order-form__input--checkbox" type="checkbox" name="black" id="black">
+            <input class="input input--checkbox order-form__input" type="checkbox" name="black" id="black">
             <label class="label order-form__label" for="black">Черный</label>
-            <input class="input order-form__input--checkbox" type="checkbox" name="pink" id="pink">
+            <input class="input input--checkbox order-form__input" type="checkbox" name="pink" id="pink">
             <label class="label order-form__label" for="pink">Розовый</label>
-            <input class="input order-form__input--checkbox" type="checkbox" name="orange" id="orange">
+            <input class="input input--checkbox order-form__input" type="checkbox" name="orange" id="orange">
             <label class="label order-form__label" for="orange">Оранжевый</label>
           </fieldset>
           <fieldset class="order-form__fieldset">
@@ -58,21 +58,18 @@
           </fieldset>
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">Тел</legend>
-            <label class="label order-form__label order-form__label--hidden" for="tel">Тел</label>
-            <input class="input order-form__input order-form__input--tel" type="tel" id="tel" name="tel" placeholder="+7 XXX XX XX" required>
+            <input class="input input--tel order-form__input" type="tel" id="tel" name="tel" placeholder="+7 XXX XX XX" required>
           </fieldset>
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">E-mail</legend>
-            <label class="label order-form__label order-form__label--hidden" for="email">Ваш Email</label>
-            <input class="input order-form__label order-form__label--email" type="email" id="email" name="email" placeholed="Ваш Email" required>
+            <input class="input input--email order-form__input" type="email" id="email" name="email" placeholder="Ваш Email" required>
           </fieldset>
           <fieldset class="order-form__fieldset">
             <legend class="order-form__legend">Доп</legend>
-            <label class="label order-form__label order-form__label--hidden" for="wishes">Доп</label>
             <textarea class="textarea order-form__textarea" id="wishes" name="wishes">Опишите все ваши пожелания к заказу</textarea>
           </fieldset>
-          <small class="order-form__footnote"><sup>*</sup> Поля обязательны для заполнения</small>
-          <button class="btn order-form__to-send" type="button">Отправить заказ</button>
+          <div class="order-form__footnote"><sup>*</sup> Поля обязательны для заполнения</div>
+          <button class="btn order-form__to-send" type="submit">Отправить заказ</button>
         </form>
       </div>
     </main>
