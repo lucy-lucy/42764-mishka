@@ -1,0 +1,21 @@
+.featured-item {
+  @include container();
+}
+
+.featured-item__title {
+  margin-bottom: 0;
+
+  @include section-header();
+}
+
+.featured-item__feature {
+  font-weight: $font-bold;
+  font-size: 1.13rem;
+  line-height: 0.9;
+  color: $feature-tiffany;
+}
+
+.featured-item__price {
+  font-weight: $font-bold;
+  font-size: 1.13rem;
+}

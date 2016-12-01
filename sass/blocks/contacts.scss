@@ -1,0 +1,19 @@
+.contacts {
+  @include container();
+}
+
+.contacts__title {
+  font-weight: $font-bold;
+  font-size: 1.2rem;
+  line-height: 1.66;
+  color: $section-header-color;
+}
+
+.contacts__value {
+  width: 75px;
+}
+
+.contacts__email {
+  color: $link-color;
+  text-decoration: none;
+}

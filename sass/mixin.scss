@@ -1,0 +1,33 @@
+@mixin page-header() {
+  padding: 0 30px;
+  font-weight: $font-bold;
+  font-size: 1.8rem;
+  line-height: 1.1;
+  text-align: center;
+  color: $page-header-color;
+}
+
+@mixin section-header() {
+  font-weight: $font-bold;
+  font-size: 1.66rem;
+  line-height: 1.2;
+  color: $section-header-color;
+}
+
+@mixin btn() {
+  padding: 15px 45px;
+  display: block;
+  text-align: center;
+  font-weight: $font-bold;
+  font-size: 1.133rem;
+  color: $btn-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $bg-btn;
+  border: $btn-color solid 2px;
+}
+
+@mixin container() {
+  padding: 0 30px;
+}

@@ -1,0 +1,43 @@
+.modal-cart {
+  font-size: 0;
+
+  @include container();
+}
+
+.modal-cart__title {
+  text-align: center;
+
+  @include section-header();
+}
+
+.modal-cart__description {
+  display: block;
+
+  font-size: 15px;
+  line-height: 2;
+  text-align: center;
+}
+
+.modal-cart__input {
+  display: none;
+}
+
+.modal-cart__label {
+  display: inline-block;
+  padding: 10px 25px;
+
+  font-weight: $font-bold;
+  font-size: 1.13rem;
+  vertical-align: middle;
+
+  border: $border-color solid 2px;
+}
+
+.modal-cart__to-add {
+  width: 100%;
+
+  color: $modal-btn-color;
+
+  background-color: $bg-tiffany;
+  border: none;
+}

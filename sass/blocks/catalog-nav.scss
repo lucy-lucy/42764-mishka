@@ -1,0 +1,25 @@
+.catalog-nav {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.catalog-nav__link {
+  display: block;
+  padding: 30px 30px;
+  font-size: 1.26rem;
+  line-height: 1.26;
+  color: $nav-link-color;
+  text-decoration: none;
+
+  &#{&}--interior {
+    background-color: $bg-tiffany;
+  }
+
+  &#{&}--toys {
+  background-color: $bg-darktiffany;
+}
+
+}

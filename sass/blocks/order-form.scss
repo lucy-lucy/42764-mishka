@@ -1,0 +1,37 @@
+.order-form {
+  @include container();
+}
+
+.order-form__description {
+  font-size: 0.86rem;
+  line-height: 1.84;
+}
+
+.order-form__fieldset {
+  padding: 0;
+
+  border: none;
+}
+
+.order-form__legend {
+  font-weight: $font-bold;
+  font-size: 1.13rem;
+  color: $legend-tiffany;
+  text-transform: uppercase;
+}
+
+.order-form__label {
+  padding: 20px 0;
+
+  font-weight: $font-bold;
+  font-size: 1.13rem;
+  line-height: 1.05;
+}
+
+.order-form__input {
+  font-size: 1.13rem;
+  line-height: 1.05;
+
+  border: none;
+  border-bottom: #000000 solid 2px;
+}
