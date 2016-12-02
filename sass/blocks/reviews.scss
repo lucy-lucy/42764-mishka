@@ -1,5 +1,5 @@
 .reviews {
-  @include container();
+  margin: 0 30px;
 }
 
 .reviews__title {
@@ -9,18 +9,16 @@
 .reviews__item {
   margin: 0;
 
-  line-height: 2;
+  line-height: $review-lh;
 }
 
 .reviews__author-name {
   font-weight: $font-bold;
-  font-size: 1.2rem;
-  line-height: 2;
-  color: $author-name-color;
+  font-size: $review-author-fs;
+  color: $review-author-color;
   font-style: normal;
 }
 
 .reviews__author-email {
-  font-size: 1.2rem;
-  line-height: 2;
+  font-size: $review-author-fs;
 }

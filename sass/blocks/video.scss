@@ -1,14 +1,30 @@
 .video {
-  @include container();
+  margin: 0 29px;
+  margin-bottom: 80px;
+
+  border: $border-color solid 1px;
 }
 
 .video__title {
-  font-size: 1.13rem;
-  line-height: 1.41;
+  padding-left: 90px;
+
+  font-size: $video-title-fs;
   color: $section-header-color;
 }
 
 .video__description {
-  font-size: 0.86rem;
-  line-height: 2.3;
+  margin: 0;
+  padding: 25px;
+
+  font-size: $video-desc-fs;
+}
+
+.video__content {
+  img {
+    display: block;
+  }
+}
+
+.video__to-order {
+  margin: 25px;
 }

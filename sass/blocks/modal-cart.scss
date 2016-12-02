@@ -1,7 +1,9 @@
 .modal-cart {
+  margin: 0 30px;
+
   font-size: 0;
 
-  @include container();
+  border-top: $border-color solid 1px;
 }
 
 .modal-cart__title {
@@ -13,8 +15,8 @@
 .modal-cart__description {
   display: block;
 
-  font-size: 15px;
-  line-height: 2;
+  font-size: $modal-desc-fs;
+  line-height: $modal-desc-lh;
   text-align: center;
 }
 
@@ -24,17 +26,28 @@
 
 .modal-cart__label {
   display: inline-block;
-  padding: 10px 25px;
+  margin-right: 7px;
+  padding: 10px 33px;
 
   font-weight: $font-bold;
-  font-size: 1.13rem;
+  font-size: $modal-label-fs;
   vertical-align: middle;
 
   border: $border-color solid 2px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.modal-cart__select-size {
+  margin-top: 25px;
+  margin-bottom: 65px;
 }
 
 .modal-cart__to-add {
   width: 100%;
+  margin-top: 31px;
 
   color: $modal-btn-color;
 
