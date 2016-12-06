@@ -1,3 +1,11 @@
+// $tablet-min: 768px;
+// $tablet-max: 1199px;
+// $desktop-min: 1200px;
+
+$mobile-widths-only: "(max-width: 767px)";
+$tablet-widths: "(min-width: 768px)";
+$desktop-widths: "(min-width: 1200px)";
+
 $font-bold: 700;
 
 $bg-gray: #fbfbfb;

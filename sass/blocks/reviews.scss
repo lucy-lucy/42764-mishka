@@ -1,5 +1,5 @@
 .reviews {
-  margin: 0 30px;
+  @include container();
 }
 
 .reviews__title {
@@ -21,4 +21,30 @@
 
 .reviews__author-email {
   font-size: $review-author-fs;
+}
+
+@media #{$tablet-widths} {
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    @include section-header-tablet();
+    order: -2;
+    margin: 0;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__to-write {
+    order: -1;
+    margin: 0;
+  }
+
 }

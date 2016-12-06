@@ -6,13 +6,17 @@
   list-style: none;
 }
 
+.catalog-nav__item {
+  display: block;
+  font-weight: $font-bold;
+  line-height: 30px;
+  font-size: $nav-link-fs;
+}
+
 .catalog-nav__link {
   display: block;
   padding: 40px 30px;
 
-  font-weight: $font-bold;
-  font-size: $nav-link-fs;
-  // line-height: $nav-link-lh;
   color: $nav-link-color;
   text-decoration: none;
 
@@ -23,4 +27,23 @@
   &#{&}--toys {
   background-color: $bg-darktiffany;
   }
+}
+
+@media #{$tablet-widths} {
+  .catalog-nav {
+    width: 668px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .catalog-nav__item {
+    width: 334px;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+
 }

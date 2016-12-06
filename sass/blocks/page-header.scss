@@ -1,3 +1,10 @@
+.page-header {
+  // width: 320px;
+  // margin: 0 30px;
+  // @include container();
+  position: relative;
+}
+
 .page-header__title {
   margin: 0;
   margin-bottom: 30px;
@@ -8,5 +15,15 @@
 }
 
 .page-header__logo {
+  padding: 20px 0;
   text-align: center;
+  border-top: $border-color solid 1px;
+}
+
+@media #{$tablet-widths} {
+  .page-header {
+    @include container();
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

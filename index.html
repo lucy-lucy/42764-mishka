@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,7 +11,9 @@
       <div class="page-header__logo">
         <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
       </div>
-      <nav class="main-nav main-nav--closed">
+      <!-- <nav class="main-nav main-nav--closed"> -->
+      <!-- <nav class="main-nav main-nav--opened"> -->
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
@@ -31,26 +34,28 @@
       <section class="featured-item">
         <h3 class="featured-item__title">Вязаные корзинки</h3>
         <b class="featured-item__feature">Товар недели</b>
-        <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <table class="featured-item__characteristic">
-          <tr>
-            <td class="featured-item__value">Цвет:</td>
-            <td class="featured-item__field">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="featured-item__value">Диаметр:</td>
-            <td class="featured-item__field">25 см</td>
-          </tr>
-          <tr>
-            <td class="featured-item__value">Высота</td>
-            <td class="featured-item__field">15 см</td>
-          </tr>
-        </table>
-        <div class="featured-item__photo">
-          <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+        <div class="feature-item__tablet-wrapper">
+          <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <table class="featured-item__characteristic">
+            <tr>
+              <td class="featured-item__value">Цвет:</td>
+              <td class="featured-item__field">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="featured-item__value">Диаметр:</td>
+              <td class="featured-item__field">25 см</td>
+            </tr>
+            <tr>
+              <td class="featured-item__value">Высота</td>
+              <td class="featured-item__field">15 см</td>
+            </tr>
+          </table>
+          <div class="featured-item__photo">
+            <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
+          </div>
+          <span class="featured-item__price">Цена: 990 руб.</span>
+          <a class="btn featured-item__to-order" href="">Заказать</a>
         </div>
-        <span class="featured-item__price">Цена: 990 руб.</span>
-        <a class="btn featured-item__to-order" href="">Заказать</a>
       </section>
       <section class="about-us">
         <h3 class="about-us__title">Коротко о нас:</h3>
@@ -59,8 +64,8 @@
           <li class="about-us__advantage about-us__advantage--price">Скандинавский стиль по российской цене</li>
           <li class="about-us__advantage about-us__advantage--heart">Увеличивает лайки на фотографиях</li>
           <li class="about-us__advantage about-us__advantage--ball-of-wool">Связано вручную с любовью и умилением</li>
-          <li class="about-us__advantage about-us__advantage--rocket">Поддержака отечественного производителя</li>
-          <li class="about-us__advantage about-us__advantage--gift">Поставляемся в подарочкой упаковке</li>
+          <li class="about-us__advantage about-us__advantage--rocket">Поддержка отечественного производителя</li>
+          <li class="about-us__advantage about-us__advantage--gift">Поставляется в подарочкой упаковке</li>
         </ul>
       </section>
       <section class="reviews">
@@ -91,14 +96,16 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <a class="social-link social-link--vk" href="">Instagram</a>
-        <a class="social-link social-link--fb" href="">Facebook</a>
-        <a class="social-link social-link--in" href="">Twitter</a>
-      </div>
-      <div class="page-footer__copyright">
-        Разработано
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social">
+          <a class="social-link social-link--vk" href="">Instagram</a>
+          <a class="social-link social-link--fb" href="">Facebook</a>
+          <a class="social-link social-link--in" href="">Twitter</a>
+        </div>
+        <div class="page-footer__copyright">
+          Разработано
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
     </footer>
 

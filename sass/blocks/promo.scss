@@ -1,15 +1,28 @@
 .promo {
   display: block;
-  min-height: 373px;
-  padding-top: 90px;
+  width: 320px;
+  margin: 0 auto;
+  // min-height: 373px;
 
-  background: $bg-gray url("../img/hero-mobile@1x.jpg") no-repeat top;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat top;
 }
 
 .promo__title {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 120px;
 
   @include page-header();
+
   padding: 0 30px;
+  padding-top: 90px;
+}
+
+@media #{$tablet-widths} {
+  .promo {
+    @include container();
+  }
+
+  .promo__title {
+    @include section-header-tablet();
+  }
 }

@@ -15,6 +15,21 @@
   color: $section-header-color;
 }
 
+@mixin section-header-tablet() {
+  font-weight: $font-bold;
+  font-size: 43px;
+  line-height: 50px;
+  color: $section-header-color;
+}
+
+@mixin section-header-desktop() {
+  font-weight: $font-bold;
+  font-size: 53px;
+  line-height: 57px;
+  color: $section-header-color;
+}
+
+
 @mixin btn() {
   padding: 15px 20px;
   margin: auto;
@@ -28,4 +43,27 @@
 
   background-color: $bg-btn;
   border: $btn-color solid 2px;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin container() {
+  width: 260px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+    margin: 0 auto;
+  }
+  //
+  // @media #{$desktop-widths} {
+  //   width: 1050px;
+  // }
 }

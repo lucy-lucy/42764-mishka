@@ -1,6 +1,7 @@
 .about-us {
-  margin: 0 30px;
+  @include container();
 }
+
 .about-us__title {
   @include section-header();
 }
@@ -13,8 +14,53 @@
 }
 
 .about-us__advantage {
+  // Исправить на нижний маргин...
   margin-top: 90px;
 
   font-weight: $font-bold;
   color: $advantage-color;
+}
+
+@media #{$tablet-widths} {
+  .about-us__title {
+    @include section-header-tablet();
+  }
+
+  .about-us__advantages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about-us__advantage {
+    width: 314px;
+    font-size: 20px;
+    margin-right: 20px;
+
+    &#{&}--flower {
+      order: 0;
+    }
+
+    &#{&}--price {
+      order: 2;
+    }
+
+    &#{&}--heart {
+      order: 4;
+    }
+
+    &#{&}--ball-of-wool {
+      order: 1;
+    }
+
+    &#{&}--rocket {
+      order: 3;
+    }
+
+    &#{&}--gift {
+      order: 5;
+    }
+
+  }
+
 }

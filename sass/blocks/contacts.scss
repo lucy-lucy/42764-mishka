@@ -1,5 +1,5 @@
 .contacts {
-  margin: 0 30px;
+  @include container();
 }
 
 .contacts__title {

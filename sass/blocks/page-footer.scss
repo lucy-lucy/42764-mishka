@@ -4,9 +4,11 @@
   background-color: $bg-gray;
 }
 
-.page-footer__social {
-  margin: 0 30px;
+.page-footer__wrapper {
+  @include container();
+}
 
+.page-footer__social {
   border-bottom: $border-color solid 1px;
 }
 
