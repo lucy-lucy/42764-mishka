@@ -1,0 +1,36 @@
+.extra-nav {
+  display: none;
+}
+
+@media #{$desktop-widths} {
+  .extra-nav {
+    @include list();
+    display: flex;
+    padding-left: 50px;
+
+    background: $bg-header;
+  }
+
+  .extra-nav__item {
+    width: 186px;
+    padding: 19px 0;
+
+    font-size: 15px;
+    text-align: left;
+
+    background: $bg-header;
+    border: none;
+
+    &#{&}:nth-child(2) {
+      padding-left: 35px;
+    }
+  }
+
+  .extra-nav__link {
+    display: block;
+    text-decoration: none;
+    color: $font-black;
+    font-weight: $font-bold;
+  }
+
+}

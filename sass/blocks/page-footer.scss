@@ -1,11 +1,15 @@
 .page-footer {
   text-align: center;
 
-  background-color: $bg-gray;
+  background-color: $bg-footer;
 }
 
 .page-footer__wrapper {
   @include container();
+}
+
+.page-footer__logo {
+  display: none;
 }
 
 .page-footer__social {
@@ -15,8 +19,59 @@
 .page-footer__copyright {
   padding: 20px 0;
 
+  font-size: 0;
+}
+
+.page-footer__copyright-text {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 19px;
+  line-height: 19px;
   font-weight: $font-bold;
-  font-size: $copyright-fs;
-  line-height: $copyright-lh;
-  color: $copyright-color;
+  color: $font-black;
+  padding-right: 29px;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  position: relative;
+  width: 29px;
+  height: 36px;
+
+  &#{&}::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 29px;
+    height: 36px;
+    background: url("../img/logo-htmlacademy.svg") no-repeat;
+  }
+
+}
+
+@media #{$tablet-widths}{
+  .page-footer__wrapper {
+    padding: 34px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    width: 28%;
+    display: block;
+    text-align: left;
+  }
+
+  .page-footer__social {
+    width: 44%;
+    border: none;
+  }
+
+  .page-footer__copyright {
+    width: 28%;
+    text-align: right;
+  }
 }

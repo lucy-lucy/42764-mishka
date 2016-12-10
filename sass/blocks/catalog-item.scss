@@ -7,9 +7,8 @@
   margin-bottom: 15px;
 
   font-weight: $font-bold;
-  font-size: $catalog-item-fs;
-  // line-height: $catalog-item-lh;
-  color: $catalog-item-color;
+  font-size: $fs-base;
+  color: $font-black;
   text-decoration: none;
 }
 
@@ -31,8 +30,8 @@
   display: block;
   padding-bottom: 25px;
 
-  font-size: $details-fs;
-  line-height: $details-lh;
+  font-size: $fs-small;
+  line-height: $lh-large;
   border-bottom: $border-color solid 1px;
 }
 
@@ -41,6 +40,5 @@
   margin-top: 25px;
 
   font-weight: $font-bold;
-  // line-height: $price-value-lh;
-  color: $catalog-item-color;
+  color: $font-black;
 }

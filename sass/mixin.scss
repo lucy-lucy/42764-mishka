@@ -1,69 +1,63 @@
 @mixin page-header() {
-  // padding: 0 30px;
-  padding: 70px 0;
+  padding: 70px 0; // уточнить, почему такие паддинги
+
   font-weight: $font-bold;
-  font-size: $page-header-fs;
-  line-height: $page-header-lh;
+  font-size: $fs-page-header;
+  line-height: $lh-page-header;
   text-align: center;
-  color: $page-header-color;
+  color: $font-black;
 }
 
 @mixin section-header() {
   font-weight: $font-bold;
-  font-size: $section-header-fs;
-  line-height: $section-header-lh;
-  color: $section-header-color;
-}
+  font-size: $fs-section-header;
+  line-height: $lh-section-header;
+  color: $font-black;
+  margin: 0;
 
-@mixin section-header-tablet() {
-  font-weight: $font-bold;
-  font-size: 43px;
-  line-height: 50px;
-  color: $section-header-color;
-}
+  @media #{$tablet-widths} {
+    font-size: $fs-section-header-tablet;
+    line-height: $lh-section-header-tablet;
+  }
 
-@mixin section-header-desktop() {
-  font-weight: $font-bold;
-  font-size: 53px;
-  line-height: 57px;
-  color: $section-header-color;
-}
-
-
-@mixin btn() {
-  padding: 15px 20px;
-  margin: auto;
-  display: block;
-  text-align: center;
-  font-weight: $font-bold;
-  font-size: $btn-fs;
-  color: $btn-color;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: $bg-btn;
-  border: $btn-color solid 2px;
-}
-
-@mixin clearfix() {
-  &::after {
-    content: "";
-
-    display: table;
-    clear: both;
+  @media #{$desktop-widths} {
+    font-size: $fs-section-header-desktop;
+    line-height: $lh-section-header-desktop;
   }
 }
 
 @mixin container() {
-  width: 260px;
-  margin: 0 auto;
+  padding: 0 30px;
 
   @media #{$tablet-widths} {
-    width: 668px;
+    padding: 0 50px;
+  }
+
+  @media #{$desktop-widths} {
+    max-width: 1050px;
     margin: 0 auto;
   }
-  //
-  // @media #{$desktop-widths} {
-  //   width: 1050px;
-  // }
+}
+
+@mixin btn() {
+  display: block;
+  margin: auto;
+  padding: 15px 20px;
+
+  font-weight: $font-bold;
+  font-size: $fs-base;
+  text-align: center;
+  color: $btn-brown;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $bg-white;
+  border: $btn-brown solid 2px;
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }

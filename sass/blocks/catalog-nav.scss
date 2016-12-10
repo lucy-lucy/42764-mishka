@@ -1,5 +1,4 @@
 .catalog-nav {
-  width: 320px;
   margin: 0;
   padding: 0;
 
@@ -7,31 +6,53 @@
 }
 
 .catalog-nav__item {
+  position: relative;
   display: block;
   font-weight: $font-bold;
-  line-height: 30px;
-  font-size: $nav-link-fs;
-}
-
-.catalog-nav__link {
-  display: block;
-  padding: 40px 30px;
-
-  color: $nav-link-color;
-  text-decoration: none;
+  line-height: $lh-large;
+  font-size: 19px;
 
   &#{&}--interior {
     background-color: $bg-tiffany;
+
+    &#{&}::after {
+      content: "";
+      width: 41px;
+      height: 62px;
+      position: absolute;
+      top: 23px;
+      right: 36px;
+      background: url("../img/icon-interior.svg") no-repeat;
+      opacity: 0.2;
+    }
   }
 
   &#{&}--toys {
   background-color: $bg-darktiffany;
+      &#{&}::after {
+        content: "";
+        width: 61px;
+        height: 61px;
+        position: absolute;
+        top: 20px;
+        right: 26px;
+        background: url("../img/icon-toy.svg") no-repeat;
+        opacity: 0.2;
+      }
   }
+}
+
+.catalog-nav__link {
+  display: block;
+  padding: 21px 74% 22px 30px;
+
+  color: $font-white;
+  text-decoration: none;
 }
 
 @media #{$tablet-widths} {
   .catalog-nav {
-    width: 668px;
+    @include container();
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -39,11 +60,20 @@
   }
 
   .catalog-nav__item {
-    width: 334px;
     flex-grow: 1;
     font-size: 20px;
     line-height: 30px;
   }
 
+  .catalog-nav__link {
+    padding-right: 55%;
+  }
+}
 
+@media #{$desktop-widths} {
+  .catalog-nav__link {
+    padding: 28px 30px;
+    padding-right: 315px;
+
+  }
 }

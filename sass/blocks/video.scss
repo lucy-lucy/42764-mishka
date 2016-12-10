@@ -8,15 +8,15 @@
 .video__title {
   padding-left: 90px;
 
-  font-size: $video-title-fs;
-  color: $section-header-color;
+  font-size: $fs-base;
+  color: $font-black;
 }
 
 .video__description {
   margin: 0;
   padding: 25px;
 
-  font-size: $video-desc-fs;
+  font-size: $fs-small;
 }
 
 .video__content {

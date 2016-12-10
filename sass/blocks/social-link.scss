@@ -1,7 +1,38 @@
 .social-link {
+  position: relative;
   display: inline-block;
   padding: 25px 0;
 
-  vertical-align: center;
   text-align: center;
+  font-size: 0;
+  width: 45px;
+  height: 31px;
+
+  &#{&}--inst::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: -2px;
+    background: url("../img/icon-insta.svg") no-repeat;
+  }
+
+  &#{&}--fb::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 31px;
+    left: 12px;
+    top: 19px;
+    background: url("../img/icon-fb.svg") no-repeat;
+  }
+
+  &#{&}--tw::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 31px;
+    right: 0;
+    background: url("../img/icon-twitter.svg") no-repeat;
+  }
 }

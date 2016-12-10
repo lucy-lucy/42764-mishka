@@ -4,7 +4,7 @@
 }
 
 .order-form__description {
-  font-size: $form-desc-fs;
+  font-size: $fs-small;
 }
 
 .order-form__fieldset {
@@ -16,8 +16,8 @@
 .order-form__legend {
   padding: 10px 0;
   font-weight: $font-bold;
-  font-size: $form-legend-fs;
-  color: $legend-tiffany;
+  font-size: $fs-base;
+  color: $font-tiffany;
   text-transform: uppercase;
 }
 
@@ -29,16 +29,16 @@
   }
 
   font-weight: $font-bold;
-  font-size: $form-label-fs;
-  line-height: $form-label-lh;
+  font-size: $fs-base;
+  line-height: $lh-base-bigger;
 }
 
 .order-form__input {
-  font-size: $form-input-fs;
-  line-height: $form-input-lh;
+  font-size: $fs-base;
+  line-height: $lh-base-bigger;
 
   border: none;
-  border-bottom: #000000 solid 2px;
+  border-bottom: #000 solid 2px;
 }
 
 .order-form__footnote {

@@ -1,5 +1,6 @@
 .about-us {
   @include container();
+  margin-bottom: 60px;
 }
 
 .about-us__title {
@@ -14,16 +15,59 @@
 }
 
 .about-us__advantage {
-  // Исправить на нижний маргин...
-  margin-top: 90px;
+  position: relative;
+  padding-top: 90px;
 
   font-weight: $font-bold;
-  color: $advantage-color;
+  color: $font-black;
+}
+
+.about-us__advantage::before {
+  content: "";
+  position: absolute;
+  width: 59px;
+  height: 41px;
+  left: 7px;
+  top: 30px;
+}
+
+.about-us__advantage {
+  &#{&}--flower::before {
+    background: url("../img/icon-feature-1.svg") no-repeat;
+  }
+
+  &#{&}--price::before {
+    left: 0;
+    background: url("../img/icon-feature-3.svg") no-repeat;
+  }
+
+   &#{&}--heart::before {
+    background: url("../img/icon-feature-5.svg") no-repeat;
+   }
+
+  &#{&}--ball-of-wool::before {
+    left: 3px;
+    background: url("../img/icon-feature-2.svg") no-repeat;
+  }
+
+  &#{&}--rocket::before {
+    left: -6px;
+    background: url("../img/icon-feature-4.svg") no-repeat;
+  }
+
+  &#{&}--gift::before {
+    left: 3px;
+    background: url("../img/icon-feature-6.svg") no-repeat;
+  }
 }
 
 @media #{$tablet-widths} {
+  .about-us {
+    margin-bottom: 80px;
+  }
+
   .about-us__title {
-    @include section-header-tablet();
+    margin: 0;
   }
 
   .about-us__advantages {
@@ -60,7 +104,15 @@
     &#{&}--gift {
       order: 5;
     }
+  }
+}
 
+@media #{$desktop-widths} {
+  .about-us__title {
+    padding-left: 175px;
   }
 
+  .about-us__advantages {
+    padding-left: 175px;
+  }
 }
