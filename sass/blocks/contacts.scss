@@ -88,7 +88,9 @@
 @media #{$desktop-widths} {
   .contacts {
     position: relative;
-    @include container();
+    // @include container();
+    max-width: 1150px;
+    margin: 0 auto;
     margin-bottom: 80px;
   }
 

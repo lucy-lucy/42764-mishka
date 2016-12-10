@@ -8,10 +8,11 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
-      </div>
-      <nav class="main-nav main-nav--closed">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
+        </div>
+      <!-- <nav class="main-nav main-nav--closed">
         <button class="main-nav__toggle main-nav__toggle--close" type="button"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="">Каталог товаров</a></li>
@@ -19,7 +20,22 @@
           <li class="main-nav__item main-nav__item--search"><a class="main-nav__link" href="">Поиск по сайту</a></li>
           <li class="main-nav__item main-nav__item--cart"><a class="main-nav__link" href="">Корзина: пока пуста</a></li>
         </ul>
-      </nav>
+      </nav> -->
+        <button class="page-header__nav-btn page-header__nav-btn--closed" type="button"></button>
+        <ul class="main-nav">
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav__item user-nav__item--search"><a class="user-nav__link" href="">Поиск по сайту</a></li>
+          <li class="user-nav__item user-nav__item--cart"><a class="user-nav__link" href="">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="extra-nav">
+          <li class="extra-nav__item"><a class="extra-nav__link" href="">Новые поступления</a></li>
+          <li class="extra-nav__item"><a class="extra-nav__link" href="">Распродажа</a></li>
+        </ul>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
+      </div>
       <h2 class="page-header__title">Каталог товаров</h2>
     </header>
     <main class="main-content">
@@ -29,8 +45,10 @@
             <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
           </a>
           <div class="catalog-item__description">
-            <a class="catalog-item__title" href="">Зайчик-попрыгайчик</a>
-            <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
+            <div class="catalog-item__info">
+              <a class="catalog-item__title" href="">Зайчик-попрыгайчик</a>
+              <span class="catalog-item__details">Рост 30 см, вес 200 г</span>
+            </div>
             <div class="catalog-item__price">
               <span class="catalog-item__price-value">1200 руб.</span>
               <a class="catalog_item__add-to-cart" href=""></a>
@@ -42,8 +60,10 @@
             <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзинка для белья">
           </a>
           <div class="catalog-item__description">
-            <a class="catalog-item__title" href="">Корзинка для белья</a>
-            <span class="catalog-item__details">Диаметр 15 см, высота 10 см</span>
+            <div class="catalog-item__info">
+              <a class="catalog-item__title" href="">Корзинка для белья</a>
+              <span class="catalog-item__details">Диаметр 15 см, высота 10 см</span>
+            </div>
             <div class="catalog-item__price">
               <span class="catalog-item__price-value">690 руб.</span>
               <a class="catalog_item__add-to-cart" href=""></a>
@@ -55,8 +75,10 @@
             <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
           </a>
           <div class="catalog-item__description">
-            <a class="catalog-item__title" href="">Большая корзинка для игрушек</a>
-            <span class="catalog-item__details">Диаметр 30 см, высота 30 см</span>
+            <div class="catalog-item__info">
+              <a class="catalog-item__title" href="">Большая корзинка для игрушек</a>
+              <span class="catalog-item__details">Диаметр 30 см, высота 30 см</span>
+            </div>
             <div class="catalog-item__price">
               <span class="catalog-item__price-value">1500 руб.</span>
               <a class="catalog_item__add-to-cart" href=""></a>
@@ -75,14 +97,19 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__social">
-        <a class="social-link social-link--inst" href="">Instagram</a>
-        <a class="social-link social-link--fb" href="">Facebook</a>
-        <a class="social-link social-link--tw" href="">Twitter</a>
-      </div>
-      <div class="page-footer__copyright">
-        Разработано
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka">
+        </div>
+        <div class="page-footer__social">
+          <a class="social-link social-link--inst" href="">Instagram</a>
+          <a class="social-link social-link--fb" href="">Facebook</a>
+          <a class="social-link social-link--tw" href="">Twitter</a>
+        </div>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+        </div>
       </div>
     </footer>
 
@@ -91,12 +118,14 @@
       <span class="modal-cart__description">Выберите размер:</span>
       <div class="modal-cart__select-size">
         <form action="https://echo.htmlacademy.ru" method="post">
-          <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
-          <label class="label modal-cart__label" for="size-s">S</label>
-          <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
-          <label class="label modal-cart__label" for="size-m">M</label>
-          <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
-          <label class="label modal-cart__label" for="size-l">L</label>
+          <div class="modal-cart__form-wrapper">
+            <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
+            <label class="label modal-cart__label" for="size-s">S</label>
+            <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
+            <label class="label modal-cart__label" for="size-m">M</label>
+            <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
+            <label class="label modal-cart__label" for="size-l">L</label>
+          </div>
           <button class="btn modal-cart__to-add" type="submit">Добавить</button>
         </form>
       </div>

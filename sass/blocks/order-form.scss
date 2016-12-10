@@ -25,7 +25,7 @@
   padding: 20px 0;
 
   &#{&}--indented {
-    padding-left: 62px;
+    padding-left: 80px;
   }
 
   font-weight: $font-bold;
@@ -49,4 +49,78 @@
 .order-form__to-send {
   width: 100%;
   margin-top: 30px;
+}
+
+@media #{$tablet-widths} {
+  .order-form {
+    margin: 0;
+  }
+
+  .order-form__legend {
+    padding: 20px 0;
+    margin-right: 130px;
+  }
+
+  .order-form__label {
+    position: relative;
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 24px;
+
+    .order-form__input[type="radio"] + &#{&}--indented::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 22px;
+      top: 6px;
+      left: 0;
+      background-color: $bg-tiffany;
+      border: $bg-white solid 13px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 0px 2px #444;
+    }
+
+      .order-form__input[type="checkbox"] + &#{&}--indented {
+        width: 165px;
+      }
+
+    .order-form__input[type="checkbox"] + &#{&}--indented::before {
+      position: absolute;
+      content: "";
+      width: 52px;
+      height: 50px;
+      top: 0;
+      left: 0;
+      border: #444 solid 2px;
+    }
+  }
+
+
+  .order-form__description {
+    margin: 0 50px;
+    margin-bottom: 60px;
+  }
+
+  .order-form__fieldset-wrapper {
+    display: flex;
+    margin: 0 50px;
+  }
+
+  .order-form__label-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    &#{&}--color {
+      padding-top: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  .order-form__fieldset {
+    margin: 0;
+    &#{&}--gray {
+      background-color: #f1f1f1;
+    }
+  }
 }

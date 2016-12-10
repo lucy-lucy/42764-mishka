@@ -1,3 +1,11 @@
 .catalog {
-  margin: 0 30px;
+  @include container();;
+}
+
+@media #{$desktop-widths} {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
