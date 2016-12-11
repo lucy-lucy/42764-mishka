@@ -62,8 +62,6 @@
 
   .featured-item__title {
     margin: 0;
-
-    font-size: 43px;
   }
 
   .featured-item__feature {
@@ -77,7 +75,7 @@
   .featured-item__info {
     display: flex;
     flex-direction: column;
-    width: 39%;
+    width: 295px;
   }
 
   .featured-item__photo {
@@ -94,6 +92,7 @@
   .featured-item__to-order {
     width: 100%;
     padding: 15px 0;
+    box-sizing: border-box;
   }
 }
 
@@ -110,7 +109,6 @@
   }
 
   .featured-item__info {
-    width: 292px;
     padding-left: 175px;
   }
 

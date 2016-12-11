@@ -14,24 +14,39 @@
   list-style: none;
 }
 
+// .about-us__advantage {
+//   position: relative;
+//   padding-top: 90px;
+//
+//   font-weight: $font-bold;
+//   color: $font-black;
+// }
+//
+// .about-us__advantage::before {
+//   content: "";
+//   position: absolute;
+//   width: 59px;
+//   height: 41px;
+//   left: 7px;
+//   top: 30px;
+// }
+
 .about-us__advantage {
   position: relative;
   padding-top: 90px;
 
   font-weight: $font-bold;
   color: $font-black;
-}
 
-.about-us__advantage::before {
-  content: "";
-  position: absolute;
-  width: 59px;
-  height: 41px;
-  left: 7px;
-  top: 30px;
-}
+  &#{&}::before {
+    content: "";
+    position: absolute;
+    width: 59px;
+    height: 41px;
+    left: 7px;
+    top: 30px;
+  }
 
-.about-us__advantage {
   &#{&}--flower::before {
     background: url("../img/icon-feature-1.svg") no-repeat;
   }

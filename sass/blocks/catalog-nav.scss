@@ -60,6 +60,7 @@
   }
 
   .catalog-nav__item {
+    width: 50%;
     flex-grow: 1;
     font-size: 20px;
     line-height: 30px;
@@ -67,6 +68,7 @@
 
   .catalog-nav__link {
     padding-right: 55%;
+    box-sizing: border-box;
   }
 }
 

@@ -48,6 +48,7 @@
 @media #{$tablet-widths} {
   .contacts__title {
     position: relative;
+    padding-top: 30px;
     padding-bottom: 55px;
     @include section-header();
 
@@ -57,7 +58,7 @@
       width: 52px;
       height: 85px;
       right: 50px;
-      top: -15px;
+      top: 15px;
       background: url("../img/icon-flag.svg") no-repeat;
     }
   }
@@ -78,20 +79,21 @@
     width: 175px;
   }
 
+  .contacts__map {
+    margin-bottom: 55px;
+  }
+
   .contacts__to-write-us {
     box-sizing: border-box;
     width: 320px;
-    margin: 55px auto;
+    margin: 0 auto;
   }
 }
 
 @media #{$desktop-widths} {
   .contacts {
     position: relative;
-    // @include container();
-    max-width: 1150px;
-    margin: 0 auto;
-    margin-bottom: 80px;
+    @include container();
   }
 
   .contacts__title {

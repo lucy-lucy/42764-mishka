@@ -1,0 +1,19 @@
+@media #{$tablet-widths}{
+  .main-content {
+    margin-bottom: 57px;
+
+    &#{&}--catalog-page {
+      margin-bottom: 63px;
+    }
+
+    &#{&}--form-page {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media #{$desktop-widths}{
+  .main-content {
+    margin-bottom: 105px;
+  }
+}

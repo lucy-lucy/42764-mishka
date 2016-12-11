@@ -13,7 +13,7 @@
   font-size: $fs-section-header;
   line-height: $lh-section-header;
   color: $font-black;
-  margin: 0;
+  margin: 0 auto;
 
   @media #{$tablet-widths} {
     font-size: $fs-section-header-tablet;
@@ -35,7 +35,9 @@
 
   @media #{$desktop-widths} {
     max-width: 1050px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
   }
 }
 

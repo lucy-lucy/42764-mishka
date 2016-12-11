@@ -87,7 +87,6 @@
     max-width: 1050px;
     padding: 0;
     margin: 0 auto;
-    margin-bottom: 105px;
     position: relative;
     align-items: flex-end;
   }
@@ -102,25 +101,24 @@
   }
 
   .video__title {
-    padding: 100px 135px 0 0;
-    width: 150px;
+    padding: 100px 60px 0 60px;
+    width: 230px;
     margin-bottom: 43px;
 
     &#{&}::before {
-      left: 0;
+      left: 60px;
       top: 46px;
     }
   }
 
   .video__description {
-    padding: 0;
-    width: 285px;
+    padding: 0 60px;
+    width: 230px;
     margin-bottom: 50px;
   }
 
   .video__to-order {
-    margin: 0;
-    margin-right: 57px;
+    margin: 0 60px;
     margin-bottom: 59px;
     width: 230px;
     box-sizing: border-box;
