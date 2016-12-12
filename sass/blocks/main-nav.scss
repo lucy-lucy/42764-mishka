@@ -16,6 +16,16 @@
   color: $font-black;
   display: block;
   text-decoration: none;
+
+  &#{&}:hover {
+    color: $link-hover;
+  }
+
+  &#{&}:active {
+    color: $link-active;
+  }
+
+
 }
 
 @media #{$tablet-widths} {

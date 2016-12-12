@@ -34,6 +34,14 @@
   display: block;
   text-decoration: none;
   color: $font-black;
+
+  &#{&}:hover {
+    color: $link-hover;
+  }
+
+  &#{&}:active {
+    color: $link-active;
+  }
 }
 
 @media #{$tablet-widths} {

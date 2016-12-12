@@ -41,22 +41,6 @@
   }
 }
 
-@mixin btn() {
-  display: block;
-  margin: auto;
-  padding: 15px 20px;
-
-  font-weight: $font-bold;
-  font-size: $fs-base;
-  text-align: center;
-  color: $btn-brown;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: $bg-white;
-  border: $btn-brown solid 2px;
-}
-
 @mixin list() {
   margin: 0;
   padding: 0;

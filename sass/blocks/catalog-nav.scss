@@ -6,7 +6,6 @@
 }
 
 .catalog-nav__item {
-  position: relative;
   display: block;
   font-weight: $font-bold;
   line-height: $lh-large;
@@ -14,6 +13,43 @@
 
   &#{&}--interior {
     background-color: $bg-tiffany;
+
+    &#{&}:hover {
+      background-color: #59d5bc;
+    }
+
+    &#{&}:active {
+      background-color: #59d5bc;
+    }
+  }
+
+  &#{&}--toys {
+    background-color: $bg-darktiffany;
+
+    &#{&}:hover {
+      background-color: #46c1ae;
+    }
+
+    &#{&}:active {
+      background-color: #46c1ae;
+    }
+  }
+}
+
+.catalog-nav__link {
+  position: relative;
+  display: block;
+  padding: 21px 74% 22px 30px;
+
+  color: $font-white;
+  text-decoration: none;
+
+  &#{&}:hover {
+    padding-top: 16px;
+    padding-bottom: 32px;
+  }
+
+  &#{&}--interior {
 
     &#{&}::after {
       content: "";
@@ -25,29 +61,29 @@
       background: url("../img/icon-interior.svg") no-repeat;
       opacity: 0.2;
     }
+
+    &#{&}:hover::after {
+      top: 18px;
+    }
   }
 
   &#{&}--toys {
-  background-color: $bg-darktiffany;
-      &#{&}::after {
-        content: "";
-        width: 61px;
-        height: 61px;
-        position: absolute;
-        top: 20px;
-        right: 26px;
-        background: url("../img/icon-toy.svg") no-repeat;
-        opacity: 0.2;
-      }
+
+    &#{&}::after {
+      content: "";
+      width: 61px;
+      height: 61px;
+      position: absolute;
+      top: 20px;
+      right: 26px;
+      background: url("../img/icon-toy.svg") no-repeat;
+      opacity: 0.2;
+    }
+
+    &#{&}:hover::after {
+      top: 15px;
+    }
   }
-}
-
-.catalog-nav__link {
-  display: block;
-  padding: 21px 74% 22px 30px;
-
-  color: $font-white;
-  text-decoration: none;
 }
 
 @media #{$tablet-widths} {

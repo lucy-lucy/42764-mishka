@@ -14,23 +14,6 @@
   list-style: none;
 }
 
-// .about-us__advantage {
-//   position: relative;
-//   padding-top: 90px;
-//
-//   font-weight: $font-bold;
-//   color: $font-black;
-// }
-//
-// .about-us__advantage::before {
-//   content: "";
-//   position: absolute;
-//   width: 59px;
-//   height: 41px;
-//   left: 7px;
-//   top: 30px;
-// }
-
 .about-us__advantage {
   position: relative;
   padding-top: 90px;
@@ -66,7 +49,7 @@
   }
 
   &#{&}--rocket::before {
-    left: -6px;
+    left: 0px;
     background: url("../img/icon-feature-4.svg") no-repeat;
   }
 

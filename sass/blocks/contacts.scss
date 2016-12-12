@@ -27,11 +27,25 @@
 }
 
 .contacts__field {
-  width: 145px;
+  width: 180px;
 
   &#{&}--link {
     color: $link-brown;
     text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #62d1ba;
+
+    &#{&}:hover {
+      color: #46c1ae;
+      border-color: #46c1ae;
+    }
+
+    &#{&}:active {
+      // color: #d3ede8;
+      // border-color: #d3ede8;
+      opacity: 0.2;
+    }
+
   }
 }
 

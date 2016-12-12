@@ -16,6 +16,14 @@
   padding: 25px;
 
   border: $border-color solid 1px;
+
+  &#{&}:hover {
+    box-shadow: 0 6px 10px #ececec;
+  }
+
+  &#{&}:active {
+    box-shadow: 0 3px 5px #ececec;
+  }
 }
 
 .catalog-item__photo {

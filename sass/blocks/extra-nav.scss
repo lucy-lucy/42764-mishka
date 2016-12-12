@@ -31,6 +31,14 @@
     text-decoration: none;
     color: $font-black;
     font-weight: $font-bold;
+
+    &#{&}:hover {
+      color: $link-hover;
+    }
+
+    &#{&}:active {
+      color: $link-active;
+    }
   }
 
 }
