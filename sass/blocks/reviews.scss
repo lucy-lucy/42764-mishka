@@ -66,9 +66,9 @@
 
   .reviews__title {
     order: -2;
-    margin: 0;
-
     @include section-header();
+
+    margin: 0;
   }
 
   .reviews__text {

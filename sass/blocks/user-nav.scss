@@ -70,4 +70,15 @@
       text-align: right;
     }
   }
+
+  .user-nav__link {
+    &#{&}--search::before {
+      left: 33px;
+    }
+
+    &#{&}--cart::before {
+      left: 31px;
+    }
+  }
+
 }
