@@ -30,13 +30,21 @@
   border-bottom: $border-color solid 1px;
 }
 
+.featured-item__photo {
+  margin-bottom: 25px;
+
+  img {
+    display: block;
+  }
+}
+
 .featured-item__characteristic {
   margin-bottom: 25px;
 }
 
 .featured-item__price {
   display: block;
-  padding: 25px 65px;
+  padding: 25px 25px;
 
   font-weight: $font-bold;
   font-size: $fs-base;

@@ -3,37 +3,19 @@
 }
 
 .user-nav__item {
-  position: relative;
   background: $bg-white;
-  padding: 30px 60px;
-  padding-left: 75px;
+  padding: 30px;
   border-bottom: $border-color solid 1px;
   font-weight: $font-bold;
   font-size: $fs-base;
-
-  &#{&}::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 24px;
-    top: 30.5px;
-    left: 30px;
-    opacity: 0.3;
-  }
-
-  &#{&}--search::before {
-    background: url("../img/icon-search.svg") no-repeat;
-  }
-
-  &#{&}--cart::before {
-    background: url("../img/icon-cart.svg") no-repeat;
-  }
  }
 
 .user-nav__link {
+  position: relative;
   display: block;
   text-decoration: none;
   color: $font-black;
+  padding-left: 45px;
 
   &#{&}:hover {
     color: $link-hover;
@@ -41,6 +23,26 @@
 
   &#{&}:active {
     color: $link-active;
+  }
+
+  &#{&}::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    opacity: 0.3;
+  }
+
+  &#{&}--search::before {
+    width: 18px;
+    height: 19px;
+    background: url("../img/icon-search.svg") no-repeat;
+  }
+
+  &#{&}--cart::before {
+    width: 21px;
+    height: 19px;
+    background: url("../img/icon-cart.svg") no-repeat;
   }
 }
 
