@@ -13,6 +13,7 @@
 }
 
 .page-footer__social {
+  padding: 25px 0;
   border-bottom: $border-color solid 1px;
 }
 
@@ -23,14 +24,14 @@
 }
 
 .page-footer__copyright-text {
-  cursor: pointer;
   display: inline-block;
+  padding: 8.5px 0;
+  padding-right: 29px;
   vertical-align: middle;
   font-size: 19px;
   line-height: 19px;
   font-weight: $font-bold;
   color: $font-black;
-  padding-right: 29px;
 }
 
 .page-footer__copyright-link {
