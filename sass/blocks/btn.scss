@@ -13,12 +13,13 @@
   background-color: $bg-white;
   border: $btn-brown solid 2px;
 
-  &#{&}:hover {
+  &:hover {
     color: $font-white;
+
     background-color: $btn-brown;
   }
 
-  &#{&}:active {
-    color: #8d8d8d;
+  &:active {
+    color: $btn-brown-active;
   }
 }

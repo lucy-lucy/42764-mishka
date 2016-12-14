@@ -1,5 +1,22 @@
 .main-nav {
   @include list();
+
+  @media #{$tablet-widths} {
+    display: flex;
+    width: 334px;
+    padding-left: 50px;
+
+    background: $bg-header;
+  }
+
+  @media #{$desktop-widths} {
+    padding: 0;
+    width: 426px;
+    display: flex;
+    order: -3;
+    background: $bg-white;
+    border-bottom: $border-color solid 1px;
+  }
 }
 
 .main-nav__item {
@@ -8,36 +25,8 @@
 
   background: $bg-white;
   border-bottom: $border-color solid 1px;
-}
 
-.main-nav__link {
-  padding: 30px 60px;
-  padding-left: 75px;
-  color: $font-black;
-  display: block;
-  text-decoration: none;
-
-  &#{&}:hover {
-    color: $link-hover;
-  }
-
-  &#{&}:active {
-    color: $link-active;
-  }
-
-
-}
-
-@media #{$tablet-widths} {
-  .main-nav {
-    display: flex;
-    width: 334px;
-    padding-left: 50px;
-
-    background: $bg-header;
-  }
-
-  .main-nav__item {
+  @media #{$tablet-widths} {
     width: 50%;
     padding: 19px 0;
 
@@ -48,22 +37,7 @@
     border: none;
   }
 
-  .main-nav__link {
-    padding: 0;
-  }
-}
-
-@media #{$desktop-widths} {
-  .main-nav {
-    padding: 0;
-    width: 426px;
-    display: flex;
-    order: -3;
-    background: $bg-white;
-    border-bottom: $border-color solid 1px;
-  }
-
-  .main-nav__item {
+  @media #{$desktop-widths} {
     width: 156px;
     margin: 0;
     border: none;
@@ -72,10 +46,30 @@
     background: $bg-white;
     font-size: 17px;
 
-    &#{&}:first-child {
+    &:first-child {
       padding-left: 50px;
       width: 184px;
       border-right: $border-color solid 1px;
     }
+  }
+}
+
+.main-nav__link {
+  padding: 30px 60px;
+  padding-left: 75px;
+  color: $font-black;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+
+  &:active {
+    color: $link-active;
+  }
+
+  @media #{$tablet-widths} {
+    padding: 0;
   }
 }

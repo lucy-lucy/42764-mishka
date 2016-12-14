@@ -1,11 +1,8 @@
 .catalog {
-  @include container();;
-}
+  @include container();
 
-@media #{$desktop-widths} {
-  .catalog {
+  @media #{$desktop-widths} {
     display: flex;
     justify-content: space-between;
   }
-
 }

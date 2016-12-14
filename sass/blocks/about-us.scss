@@ -1,10 +1,23 @@
 .about-us {
   @include container();
+
   margin-bottom: 60px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 80px;
+  }
 }
 
 .about-us__title {
   @include section-header();
+
+  @media #{$tablet-widths} {
+    margin: 0;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .about-us__advantages {
@@ -12,6 +25,16 @@
   padding: 0;
 
   list-style: none;
+
+  @media #{$tablet-widths} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media #{$desktop-widths} {
+    padding-left: 175px;
+  }
 }
 
 .about-us__advantage {
@@ -21,7 +44,7 @@
   font-weight: $font-bold;
   color: $font-black;
 
-  &#{&}::before {
+  &::before {
     content: "";
     position: absolute;
     width: 59px;
@@ -39,9 +62,9 @@
     background: url("../img/icon-feature-3.svg") no-repeat;
   }
 
-   &#{&}--heart::before {
+  &#{&}--heart::before {
     background: url("../img/icon-feature-5.svg") no-repeat;
-   }
+  }
 
   &#{&}--ball-of-wool::before {
     left: 3px;
@@ -57,27 +80,10 @@
     left: 3px;
     background: url("../img/icon-feature-6.svg") no-repeat;
   }
-}
 
-@media #{$tablet-widths} {
-  .about-us {
-    margin-bottom: 80px;
-  }
-
-  .about-us__title {
-    margin: 0;
-  }
-
-  .about-us__advantages {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .about-us__advantage {
-    width: 314px;
+  @media #{$tablet-widths} {
+    width: 50%;
     font-size: 20px;
-    margin-right: 20px;
 
     &#{&}--flower {
       order: 0;
@@ -102,15 +108,5 @@
     &#{&}--gift {
       order: 5;
     }
-  }
-}
-
-@media #{$desktop-widths} {
-  .about-us__title {
-    padding-left: 175px;
-  }
-
-  .about-us__advantages {
-    padding-left: 175px;
   }
 }

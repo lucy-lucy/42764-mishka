@@ -1,19 +1,19 @@
 .extra-nav {
   display: none;
-}
 
-@media #{$desktop-widths} {
-  .extra-nav {
+  @media #{$desktop-widths} {
     @include list();
     display: flex;
-    padding-left: 50px;
 
     background: $bg-header;
   }
+}
 
-  .extra-nav__item {
+.extra-nav__item {
+  @media #{$desktop-widths} {
     width: 186px;
     padding: 19px 0;
+    padding-left: 50px;
 
     font-size: 15px;
     text-align: left;
@@ -21,24 +21,25 @@
     background: $bg-header;
     border: none;
 
-    &#{&}:nth-child(2) {
+    &:nth-child(2) {
       padding-left: 35px;
     }
   }
+}
 
-  .extra-nav__link {
+.extra-nav__link {
+  @media #{$desktop-widths} {
     display: block;
     text-decoration: none;
     color: $font-black;
     font-weight: $font-bold;
 
-    &#{&}:hover {
+    &:hover {
       color: $link-hover;
     }
 
-    &#{&}:active {
+    &:active {
       color: $link-active;
     }
   }
-
 }

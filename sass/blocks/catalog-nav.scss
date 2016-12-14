@@ -3,55 +3,54 @@
   padding: 0;
 
   list-style: none;
+
+  @media #{$tablet-widths} {
+    @include container();
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+  }
 }
 
 .catalog-nav__item {
   display: block;
   font-weight: $font-bold;
-  line-height: $lh-large;
+  line-height: 24px;
   font-size: 19px;
 
-  &#{&}--interior {
-    background-color: $bg-tiffany;
-
-    &#{&}:hover {
-      background-color: #59d5bc;
-    }
-
-    &#{&}:active {
-      background-color: #59d5bc;
-    }
-  }
-
-  &#{&}--toys {
-    background-color: $bg-darktiffany;
-
-    &#{&}:hover {
-      background-color: #46c1ae;
-    }
-
-    &#{&}:active {
-      background-color: #46c1ae;
-    }
+  @media #{$tablet-widths} {
+    width: 50%;
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 .catalog-nav__link {
   position: relative;
   display: block;
-  padding: 21px 74% 22px 30px;
+  padding: 27px 30px;
+  min-height: 103px;
+  box-sizing: border-box;
 
   color: $font-white;
   text-decoration: none;
 
-  &#{&}:hover {
-    padding-top: 16px;
-    padding-bottom: 32px;
-  }
-
   &#{&}--interior {
+    background-color: $bg-tiffany;
 
-    &#{&}::after {
+    &:hover {
+      box-shadow: 0 5px 0 0 $bg-tiffany-effect;
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      background-color: $bg-tiffany-effect;
+    }
+
+    &::after {
       content: "";
       width: 41px;
       height: 62px;
@@ -61,15 +60,21 @@
       background: url("../img/icon-interior.svg") no-repeat;
       opacity: 0.2;
     }
-
-    &#{&}:hover::after {
-      top: 18px;
-    }
   }
 
   &#{&}--toys {
+    background-color: $bg-darktiffany;
 
-    &#{&}::after {
+    &:hover {
+      box-shadow: 0 5px 0 0 $bg-darktiffany-effect;
+      transform: translateY(-5px);
+    }
+
+    &:active {
+      background-color: $bg-darktiffany-effect;
+    }
+
+    &::after {
       content: "";
       width: 61px;
       height: 61px;
@@ -79,39 +84,9 @@
       background: url("../img/icon-toy.svg") no-repeat;
       opacity: 0.2;
     }
-
-    &#{&}:hover::after {
-      top: 15px;
-    }
-  }
-}
-
-@media #{$tablet-widths} {
-  .catalog-nav {
-    @include container();
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: auto;
   }
 
-  .catalog-nav__item {
-    width: 50%;
-    flex-grow: 1;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .catalog-nav__link {
-    padding-right: 55%;
-    box-sizing: border-box;
-  }
-}
-
-@media #{$desktop-widths} {
-  .catalog-nav__link {
-    padding: 28px 30px;
-    padding-right: 315px;
-
+  @media #{$tablet-widths} {
+    min-height: 119px;
   }
 }

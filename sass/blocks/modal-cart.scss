@@ -4,16 +4,29 @@
   font-size: 0;
 
   border-top: $border-color solid 1px;
+
+  @media #{$tablet-widths} {
+    width: 350px;
+    margin: 50px auto;
+    padding: 50px 100px;
+
+    border: $border-color solid 1px;
+  }
 }
 
 .modal-cart__title {
+  @include section-header();
+
   padding: 0 50px;
   padding-bottom: 20px;
 
   text-align: center;
   text-transform: uppercase;
 
-  @include section-header();
+  @media #{$tablet-widths} {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }
 
 .modal-cart__description {
@@ -27,6 +40,12 @@
 .modal-cart__form-wrapper {
   display: flex;
   justify-content: center;
+
+  @media #{$tablet-widths} {
+    justify-content: space-between;
+
+    text-align: center;
+  }
 }
 
 .modal-cart__input {
@@ -34,6 +53,7 @@
 }
 
 .modal-cart__label {
+  cursor: pointer;
   display: inline-block;
   margin-right: 7px;
   padding: 10px 33px;
@@ -44,16 +64,20 @@
 
   border: $border-color solid 2px;
 
-  &#{&}:hover {
+  &:hover {
     border-color: #c7c7c7;
   }
 
-  &#{&}:active {
+  &:active {
     border-color: #62d1ba;
   }
 
-  &#{&}:last-of-type {
+  &:last-of-type {
     margin-right: 0;
+  }
+
+  @media #{$tablet-widths} {
+    flex-grow: 1;
   }
 }
 
@@ -70,30 +94,4 @@
 
   background-color: $bg-tiffany;
   border: none;
-}
-
-@media #{$tablet-widths} {
-  .modal-cart {
-    width: 350px;
-    margin: 50px auto;
-    padding: 50px 100px;
-
-    border: $border-color solid 1px;
-  }
-
-  .modal-cart__title {
-    font-size: 30px;
-    line-height: 57px;
-  }
-
-  .modal-cart__form-wrapper {
-    display: flex;
-    justify-content: space-between;
-
-    text-align: center;
-  }
-
-  .modal-cart__label {
-    flex-grow: 1;
-  }
 }
