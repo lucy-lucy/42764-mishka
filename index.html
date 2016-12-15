@@ -42,7 +42,7 @@
           <b class="featured-item__feature">Товар недели</b>
         </header>
         <div class="featured-item__info">
-          <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+          <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
           <table class="featured-item__characteristic">
             <tr>
               <td class="featured-item__value">Цвет:</td>
@@ -53,7 +53,7 @@
               <td class="featured-item__field">25 см</td>
             </tr>
             <tr>
-              <td class="featured-item__value">Высота</td>
+              <td class="featured-item__value">Высота:</td>
               <td class="featured-item__field">15 см</td>
             </tr>
           </table>
@@ -76,7 +76,7 @@
       <section class="reviews">
         <h3 class="reviews__title">Отзывы</h3>
         <blockquote class="reviews__item">
-          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbspмои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
         </blockquote>
         <div class="reviews__author">
           <span class="reviews__author-name">Анастасия Красильникова</span>
@@ -125,19 +125,17 @@
     <div class="modal-cart">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
       <span class="modal-cart__description">Выберите размер:</span>
-      <div class="modal-cart__select-size">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="modal-cart__form-wrapper">
-            <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
-            <label class="label modal-cart__label" for="size-s">S</label>
-            <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
-            <label class="label modal-cart__label" for="size-m">M</label>
-            <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
-            <label class="label modal-cart__label" for="size-l">L</label>
-          </div>
-          <button class="btn modal-cart__to-add" type="submit">Добавить</button>
-        </form>
-      </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal-cart__form-wrapper">
+          <input class="input modal-cart__input" type="radio" name="size" id="size-s" value="size-s" checked>
+          <label class="label modal-cart__label" for="size-s">S</label>
+          <input class="input modal-cart__input" type="radio" name="size" id="size-m" value="size-m">
+          <label class="label modal-cart__label" for="size-m">M</label>
+          <input class="input modal-cart__input" type="radio" name="size" id="size-l" value="size-l">
+          <label class="label modal-cart__label" for="size-l">L</label>
+        </div>
+        <button class="btn modal-cart__to-add" type="submit">Добавить</button>
+      </form>
     </div>
 
   </body>

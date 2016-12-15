@@ -31,7 +31,7 @@
 .catalog-nav__link {
   position: relative;
   display: block;
-  padding: 27px 30px;
+  padding: 26px 30px 27px 28px;
   min-height: 103px;
   box-sizing: border-box;
 
@@ -87,6 +87,22 @@
   }
 
   @media #{$tablet-widths} {
-    min-height: 119px;
+    min-height: 117px;
+    padding-top: 29px;
+    padding-left: 36px;
+
+    &#{&}--interior {
+      &::after {
+        top: 30px;
+        right: 36px;
+      }
+    }
+
+    &#{&}--toys {
+      &::after {
+        top: 31px;
+        right: 33px;
+      }
+    }
   }
 }

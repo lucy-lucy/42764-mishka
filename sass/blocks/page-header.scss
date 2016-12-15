@@ -2,6 +2,14 @@
   position: relative;
   background: $bg-header;
   margin-bottom: 27px;
+
+  @media #{$tablet-widths} {
+    margin-bottom: 47px;
+  }
+
+  @media #{$desktop-widths} {
+    margin-bottom: 73px;
+  }
 }
 
 .page-header__logo {
@@ -20,9 +28,6 @@
     padding-left: 50px;
 
     text-align: left;
-
-    border-top: none;
-    border-right: $border-color solid 1px;
   }
 
   @media #{$desktop-widths} {
@@ -33,6 +38,8 @@
 }
 
 .page-header__wrapper {
+  position: relative;
+
   @media #{$tablet-widths} {
     display: flex;
     flex-wrap: wrap;
@@ -65,7 +72,6 @@
 
   @media #{$tablet-widths} {
     display: flex;
-    flex-grow: 1;
     justify-content: flex-end;
     align-items: center;
     align-self: stretch;
