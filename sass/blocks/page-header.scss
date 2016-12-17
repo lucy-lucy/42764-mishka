@@ -1,7 +1,9 @@
 .page-header {
   position: relative;
   background: $bg-header;
-  margin-bottom: 27px;
+
+  // margin-bottom: 27px;
+  margin-bottom: 22px; // form
 
   @media #{$tablet-widths} {
     margin-bottom: 47px;
@@ -57,16 +59,19 @@
   @include page-header();
 
   margin: 0 auto;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
+  margin-bottom: 0px; // form
   max-width: 1150px;
 
-  background-color: $bg-title;
+  // background-color: $bg-title;
+  background-color: #f1f1f1; // form
 
   @media #{$tablet-widths} {
     @include section-header();
     padding: 35px 0;
     padding-bottom: 78px;
-    padding-left: 10px;
+    // padding-left: 10px;
+    padding-left: 5px;
   }
 
   @media #{$desktop-widths} {
