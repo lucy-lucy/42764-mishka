@@ -10,6 +10,9 @@
   }
 
   @media #{$desktop-widths} {
+    &#{&}--dark-gray {
+      background-color: $bg-title;
+    }
     margin-bottom: 74px;
   }
 }
@@ -41,12 +44,17 @@
 
 .page-header__wrapper {
   position: relative;
+  background-color: $bg-title;
 
   @media #{$tablet-widths} {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
+    &#{&}--light-gray {
+      background-color: $bg-header;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -94,7 +102,9 @@
 
     text-align: right;
 
-    background: $bg-header;
+    &#{&}--light-gray {
+      background-color: $bg-header;
+    }
   }
 }
 

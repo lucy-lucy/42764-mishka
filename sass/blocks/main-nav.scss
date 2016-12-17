@@ -14,8 +14,9 @@
     width: 334px;
     padding-left: 50px;
 
-    background: $bg-header;
-    // background-color: #f1f1f1;
+    &#{&}--dark-gray {
+      background-color: $bg-title;
+    }
   }
 
   @media #{$desktop-widths} {
@@ -27,14 +28,18 @@
     background: $bg-white;
     border-top: $border-color solid 1px;
     border-bottom: $border-color solid 1px;
+
+    &#{&}--dark-gray {
+      background-color: $bg-white;
+    }
   }
 }
 
 .main-nav__item {
   font-weight: $font-bold;
   font-size: $fs-base;
-
   background: $bg-white;
+
   border-bottom: $border-color solid 1px;
 
   @media #{$tablet-widths} {
@@ -44,7 +49,14 @@
     font-size: 15px;
     text-align: left;
 
-    background: $bg-header;
+    &#{&}--light-gray {
+      background-color: $bg-header;
+    }
+
+    &#{&}--dark-gray {
+      background-color: $bg-title;
+    }
+
     border: none;
   }
 
@@ -54,8 +66,15 @@
     border: none;
     padding: 31px 0;
     padding-left: 35px;
-    background: $bg-white;
     font-size: 17px;
+
+    &#{&}--light-gray {
+      background-color: $bg-white;
+    }
+
+    &#{&}--dark-gray {
+      background-color: $bg-white;
+    }
 
     &:first-child {
       padding-left: 50px;

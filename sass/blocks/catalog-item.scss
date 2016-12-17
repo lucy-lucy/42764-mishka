@@ -26,6 +26,14 @@
   color: $font-black;
   text-decoration: none;
 
+  &:hover {
+    color: #8d8d8d;
+  }
+
+  &:active {
+    color: #cacaca;
+  }
+
   @media #{$tablet-widths} {
     margin-bottom: 5px;
     font-size: 20px;

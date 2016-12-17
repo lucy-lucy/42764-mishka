@@ -7,15 +7,15 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--dark-gray">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"></a>
         </div>
         <button class="page-header__nav-btn page-header__nav-btn--closed" type="button"></button>
-        <ul class="main-nav">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+        <ul class="main-nav main-nav--dark-gray">
+          <li class="main-nav__item main-nav__item--dark-gray"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--dark-gray"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
         </ul>
         <ul class="user-nav">
           <li class="user-nav__item user-nav__item--search"><a class="user-nav__link user-nav__link--search" href="">Поиск по сайту</a></li>
@@ -85,11 +85,11 @@
               <div class="order-form__inner-wrapper">
                 <div class="order-form__input-wrapper order-form__input-wrapper--fullname">
                   <label class="label order-form__label order-form__label--fullname" for="name">Имя:</label>
-                  <input class="input order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+                  <input class="input order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
                 </div>
                 <div class="order-form__input-wrapper order-form__input-wrapper--fullname">
                   <label class="label order-form__label order-form__label--fullname" for="surname">Фамилия:</label>
-                  <input class="input order-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
+                  <input class="input order-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
                 </div>
                 <div class="order-form__input-wrapper order-form__input-wrapper--fullname">
                   <label class="label order-form__label order-form__label--fullname" for="patronymic">Отчество:</label>
@@ -101,23 +101,23 @@
           <fieldset class="order-form__fieldset order-form__fieldset--gray order-form__fieldset--tel">
             <div class="order-form__fieldset-wrapper">
               <legend class="order-form__legend order-form__legend--tel">Тел</legend>
-              <div class="order-form__inner-wrapper">
-                <input class="input input--tel order-form__input" type="tel" id="tel" name="tel" placeholder="+7 XXX XX XX" required>
+              <div class="order-form__inner-wrapper order-form__inner-wrapper--tel">
+                <input class="input input--tel order-form__input" type="tel" id="tel" name="tel" placeholder="+7 XXX XX XX*" required>
               </div>
             </div>
           </fieldset>
           <fieldset class="order-form__fieldset order-form__fieldset--gray order-form__fieldset--email">
             <div class="order-form__fieldset-wrapper">
               <legend class="order-form__legend order-form__legend--email">E-mail</legend>
-              <div class="order-form__inner-wrapper">
-                <input class="input input--email order-form__input" type="email" id="email" name="email" placeholder="Ваш Email" required>
+              <div class="order-form__inner-wrapper order-form__inner-wrapper--email">
+                <input class="input input--email order-form__input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
               </div>
             </div>
           </fieldset>
           <fieldset class="order-form__fieldset order-form__fieldset--wishes">
             <div class="order-form__fieldset-wrapper">
               <legend class="order-form__legend order-form__legend--wishes">Доп</legend>
-              <div class="order-form__inner-wrapper">
+              <div class="order-form__inner-wrapper order-form__inner-wrapper--wishes">
                 <textarea class="textarea order-form__textarea" id="wishes" name="wishes" placeholder="Опишите все ваши пожелания к заказу"></textarea>
               </div>
             </div>

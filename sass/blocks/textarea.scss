@@ -1,12 +1,23 @@
 .textarea {
   display: block;
   box-sizing: border-box;
+  outline: none;
+  font-size: $fs-base;
 
   color: $textarea-color;
 
   border: $textarea-border solid 2px;
 
   resize: none;
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:focus {
+    color: #000;
+    border-color: #62d1ba;
+  }
 
   @media #{$tablet-widths} {
     font-size: 19px;
