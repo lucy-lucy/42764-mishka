@@ -5,6 +5,7 @@
     margin-bottom: 57px;
 
     &#{&}--catalog-page {
+      padding-top: 34px;
       margin-bottom: 63px;
     }
 
@@ -15,5 +16,10 @@
 
   @media #{$desktop-widths} {
     margin-bottom: 105px;
+
+    &#{&}--catalog-page {
+      padding-top: 58px;
+      margin-bottom: 105px;
+    }
   }
 }

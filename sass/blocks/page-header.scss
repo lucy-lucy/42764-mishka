@@ -8,7 +8,7 @@
   }
 
   @media #{$desktop-widths} {
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 }
 
@@ -64,7 +64,17 @@
 
   @media #{$tablet-widths} {
     @include section-header();
+    padding: 35px 0;
+    padding-bottom: 78px;
+    padding-left: 10px;
   }
+
+  @media #{$desktop-widths} {
+    padding-left: 0;
+    padding-bottom: 100px;
+  }
+
+
 }
 
 .page-header__delivery {

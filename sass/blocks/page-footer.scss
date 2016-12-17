@@ -31,8 +31,8 @@
   display: flex;
   justify-content: space-between;
 
-  padding: 22px 62px 29px 57px;
-  border-bottom: $border-color solid 1px;
+  padding: 22px 62px 28px 57px;
+  border-bottom: $border-footer solid 1px;
 
   @media #{$tablet-widths} {
     border: none;
