@@ -122,7 +122,7 @@
   background-color: $bg-white;
   border: none;
 
-  &#{&}--closed::before {
+  &#{&}--opened::before {
     content: "";
     position: absolute;
     width: 20px;

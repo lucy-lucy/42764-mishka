@@ -3,26 +3,29 @@
 
   font-size: $fs-base;
   line-height: $lh-base-bigger;
+  font-family: "Open Sans", "Arial", sans-serif;
 
   border: none;
-  border-bottom: #000 solid 2px;
-
+  border-bottom: $font-black solid 2px;
   outline: none;
 
-  &::-webkit-input-placeholder {
-    color: #d2d2d2;
+  &::-webkit-input-placeholder,
+  &:-ms-input-placeholder,
+  &::-ms-input-placeholder {
     font-weight: 400;
-    font-style: normal;
     font-size: $fs-base;
+    color: $placeholder-color;
+    font-style: normal;
   }
 
   &:hover {
-    border-color: #62d1ba;
+    border-color: $input-tiffany;
   }
 
   &:focus {
-    color: #000;
-    border-color: #62d1ba;
+    color: $font-black;
+
+    border-color: $input-tiffany;
   }
 
   &#{&}--radio {
@@ -37,20 +40,22 @@
     font-size: 19px;
     line-height: 19px;
 
-    &::-webkit-input-placeholder {
-      color: #d2d2d2;
-      font-style: normal;
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
       font-size: 19px;
     }
 
     &#{&}--tel {
-      background-color: $bg-input;
       box-sizing: border-box;
+
+      background-color: $bg-input;
     }
 
-    &#{&}--email  {
-      background-color: $bg-input;
+    &#{&}--email {
       box-sizing: border-box;
+
+      background-color: $bg-input;
     }
   }
 }
