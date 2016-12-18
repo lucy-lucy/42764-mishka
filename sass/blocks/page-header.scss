@@ -17,7 +17,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo-wrapper {
   padding: 21px 0 16px 0;
   background: $bg-white;
   text-align: center;
@@ -29,16 +29,49 @@
     flex-grow: 1;
     order: -2;
     width: 320px;
-    padding: 23px 0;
-    padding-left: 50px;
-
+    padding: 21px 0 14px 49px;
     text-align: left;
   }
 
   @media #{$desktop-widths} {
     width: 277px;
-    padding-left: 0;
+    padding: 8px 28px 0 0;
     text-align: center;
+  }
+}
+
+.page-header__logo {
+  &#{&}--tablet,
+  &#{&}--desktop {
+    display: none;
+  }
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
+
+  @media all and #{$tablet-widths} {
+    &#{&}--mobile {
+      display: none;
+    }
+
+    &#{&}--tablet {
+      display: inline;
+    }
+  }
+
+  @media all and #{$desktop-widths} {
+    &#{&}--tablet {
+      display: none;
+    }
+
+    &#{&}--desktop {
+      display: inline;
+    }
   }
 }
 
