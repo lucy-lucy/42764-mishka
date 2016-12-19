@@ -2,18 +2,17 @@
   position: relative;
   background: $bg-header;
 
-  // margin-bottom: 27px;
-  margin-bottom: 22px; // form
+  margin-bottom: 22px;
 
   @media #{$tablet-widths} {
-    margin-bottom: 47px;
+    margin-bottom: 33px;
   }
 
   @media #{$desktop-widths} {
     &#{&}--dark-gray {
       background-color: $bg-title;
     }
-    margin-bottom: 74px;
+    margin-bottom: 53px;
   }
 }
 
@@ -100,24 +99,25 @@
   @include page-header();
 
   margin: 0 auto;
-  // margin-bottom: 30px;
-  margin-bottom: 0px; // form
-  max-width: 1150px;
+  margin-bottom: 0px;
+  // max-width: 1150px;
 
-  // background-color: $bg-title;
-  background-color: #f1f1f1; // form
+  background-color: #f1f1f1;
 
   @media #{$tablet-widths} {
     @include section-header();
     padding: 35px 0;
-    padding-bottom: 78px;
-    // padding-left: 10px;
+    padding-bottom: 92px;
     padding-left: 5px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    background-size: 110% auto;
   }
 
   @media #{$desktop-widths} {
     padding-left: 0;
-    padding-bottom: 100px;
+    padding-bottom: 121px;
   }
 
 
