@@ -71,15 +71,14 @@
   }
 
   @media #{$tablet-widths} {
+    background-color: #e4e4e4;
 
     img {
       width: 333px;
       height: 334px;
       display: block;
     }
-    // width: 333px;
-    // height: 334px; // Временно
-    background-color: #e4e4e4;
+
   }
 
   @media #{$desktop-widths} {
@@ -142,8 +141,21 @@
 
 .catalog_item__add-to-cart {
   width: 20px;
-  background: url("../img/icon-cart.svg") no-repeat;
-  opacity: 0.3;
+
+  svg {
+    opacity: 0.2;
+  }
+
+  &:hover {
+    svg {
+      opacity: 1;
+      fill: $icon-fill;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media #{$tablet-widths} {
     margin-right: 5px;

@@ -173,34 +173,53 @@
 .order-form__inner-wrapper {
 
   &#{&}--tel {
-    margin-top: 13px;
     position: relative;
+    margin-top: 13px;
 
-    &::after {
+    svg {
       position: absolute;
-      content: "";
-      width: 25px;
-      height: 24px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
-      bottom: 17px;
-      right: 9px;
+      top: 2px;
+      right: 4px;
+      opacity: 0.2;
     }
+
+    &:hover {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
   }
 
   &#{&}--email {
     margin-top: 12px;
     position: relative;
 
-    &::after {
+    svg {
       position: absolute;
-      content: "";
-      width: 32px;
-      height: 27px;
-      background-image: url("../img/icon-mail.svg");
-      bottom: 14px;
-      right: 5px;
+      top: 2px;
+      right: 8px;
+      opacity: 0.2;
     }
+
+    &:hover {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
   }
 
   &#{&}--wishes {
