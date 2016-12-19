@@ -125,6 +125,10 @@
       background-color: $bg-input;
     }
   }
+
+  @media #{$desktop-widths} {
+    padding-right: 0;
+  }
 }
 
 .order-form__legend {
@@ -178,32 +182,7 @@
 
     svg {
       position: absolute;
-      top: 2px;
-      right: 4px;
-      opacity: 0.2;
-    }
-
-    &:hover {
-      svg {
-        fill: $input-fill;
-      }
-    }
-
-    &:active {
-      svg {
-        fill: $input-fill;
-      }
-    }
-
-  }
-
-  &#{&}--email {
-    margin-top: 12px;
-    position: relative;
-
-    svg {
-      position: absolute;
-      top: 2px;
+      top: -4px;
       right: 8px;
       opacity: 0.2;
     }
@@ -219,7 +198,30 @@
         fill: $input-fill;
       }
     }
+  }
 
+  &#{&}--email {
+    margin-top: 12px;
+    position: relative;
+
+    svg {
+      position: absolute;
+      top: -4px;
+      right: 4px;
+      opacity: 0.2;
+    }
+
+    &:hover {
+      svg {
+        fill: $input-fill;
+      }
+    }
+
+    &:active {
+      svg {
+        fill: $input-fill;
+      }
+    }
   }
 
   &#{&}--wishes {
@@ -237,14 +239,18 @@
     }
 
     &#{&}--tel {
-      &::after {
-        right: 26px;
+
+      svg {
+        top: 1px;
+        right: 25px;
       }
     }
 
     &#{&}--email {
-      &::after {
-        right: 22px;
+
+      svg {
+        top: 3px;
+        right: 21px;
       }
     }
 
@@ -265,14 +271,16 @@
     }
 
     &#{&}--tel {
-      &::after {
-        right: 8px;
+      svg {
+        top: 2px;
+        right: 4px;
       }
     }
 
     &#{&}--email {
-      &::after {
-        right: 4px;
+      svg {
+        top: 2px;
+        right: 8px;
       }
     }
   }
@@ -329,8 +337,8 @@
     &#{&}--fullname {
       display: flex;
       width: 100%;
-      padding: 20px 0;
-      padding-bottom: 16px;
+      padding: 16px 0;
+      padding-bottom: 17px;
 
       align-items: baseline;
     }
@@ -341,6 +349,7 @@
 
     &#{&}--fullname {
       width: 100%;
+      padding: 16.5px 0;
     }
 
     &#{&}--checkbox {
@@ -386,7 +395,6 @@
       content: "";
       width: 15px;
       height: 15px;
-      // top: 17px;
       top: 50%;
       left: 2px;
       transform: translateY(-50%);

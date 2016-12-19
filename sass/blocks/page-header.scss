@@ -9,10 +9,15 @@
   }
 
   @media #{$desktop-widths} {
+    margin-bottom: 73px;
+
     &#{&}--dark-gray {
       background-color: $bg-title;
     }
-    margin-bottom: 53px;
+
+    &#{&}--inner {
+      margin-bottom: 53px;
+    }
   }
 }
 
@@ -117,7 +122,7 @@
 
   @media #{$desktop-widths} {
     padding-left: 0;
-    padding-bottom: 121px;
+    padding-bottom: 124px;
   }
 
 

@@ -115,7 +115,7 @@
             <b class="featured-item__feature">Товар недели</b>
           </header>
           <div class="featured-item__info">
-            <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="featured-item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
             <table class="featured-item__characteristic">
               <tr>
                 <td class="featured-item__value">Цвет:</td>
@@ -170,7 +170,6 @@
       </section>
       <section class="contacts">
         <h4 class="contacts__title">Контакты</h4>
-
         <div class="contacts__details">
           <div class="contacts__email">
             <span class="contacts__value">e-mail:</span>
@@ -181,7 +180,7 @@
             <p class="contacts__field">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map" id="map"></div>
         <a class="btn contacts__to-write-us" href="">Напишите нам</a>
       </section>
     </main>
@@ -199,8 +198,6 @@
               <path d="M24.108,6.7c0.521-0.05,1.045-0.226,1.477-0.524c0.085-0.072,0.171-0.144,0.256-0.216c0.52-0.335,0.972-0.827,0.728-1.361 c-0.504-1.105-0.423-2.231-0.416-3.414c0.006-0.958-0.963-1.246-1.781-1.174c-0.723,0.063-2.168,0.581-2.175,1.52 c-0.006,0.993-0.071,2.016,0.109,2.992c-0.047,0.113-0.074,0.239-0.104,0.355c-0.055,0.212,0.016,0.42,0.142,0.59 c0,0.045,0.002,0.089,0.002,0.134c0.005,0.112,0.01,0.224,0.015,0.335c0.073,0.232,0.216,0.409,0.429,0.53 C23.178,6.7,23.668,6.742,24.108,6.7z"/>
             </g>
           </svg>
-
-          <!-- <img src="img/logo-mobile.svg" width="86" height="35" alt="Mishka"> -->
         </div>
         <div class="page-footer__social">
           <a class="social-link social-link--inst" href="">
@@ -235,13 +232,11 @@
           </a>
         </div>
         <div class="page-footer__copyright">
-          <!-- <span class="page-footer__copyright-text">Разработано</span> -->
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
             Разработано
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
               <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
             </svg>
-            <!-- HTML Academy -->
           </a>
         </div>
       </div>
@@ -262,6 +257,30 @@
         <button class="btn modal-cart__to-add" type="submit">Добавить</button>
       </form>
     </div>
+
+    <!-- Карту пока добавляю здесь
+      Как только начну прикручивать js, перенесу все в нужное место :)
+      По поводу координат:
+      Их я выставляла по указанному адресу. В макете координаты отличаются, чему верить - не знаю...-->
+    <script>
+      function initMap() {
+        var mishka = {lat: 59.938750, lng: 30.323178};
+        var mishka_fake = {lat: 59.936319, lng: 30.321681};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: mishka_fake,
+          scrollwheel: false,
+          zoom: 16,
+          disableDefaultUI: true
+        });
+        var image = "img/icon-map-pin.svg";
+        var marker = new google.maps.Marker({
+          position: mishka_fake,
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9EiNxWxPowJ9d5ukdjdUyqy9ln6peBvQ&callback=initMap" async defer></script>
 
   </body>
 </html>

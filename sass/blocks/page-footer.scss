@@ -101,4 +101,8 @@
     }
   }
 
+  @media #{$desktop-widths} {
+    padding-right: 57px;
+  }
+
 }

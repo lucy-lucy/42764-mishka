@@ -2,7 +2,7 @@
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-position: bottom;
-  background-size: 110% auto;
+  // background-size: 110% auto;
 }
 
 .reviews__wrapper {
@@ -30,7 +30,9 @@
 
   @media #{$desktop-widths} {
     background-position-y: 6px;
-    padding-bottom: 191px;
+    // padding-bottom: 191px;
+    padding-bottom: 155px;
+    margin-bottom: 71px;
   }
 }
 
