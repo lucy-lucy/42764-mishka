@@ -21,14 +21,14 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-     "fonts/**/*.{woff, woff2}",
-     "img/**",
-     "js/**",
-     "*.html"
-   ], {
-     base: "."
-   })
-   .pipe(gulp.dest("build"));
+    "fonts/**/*.{woff, woff2}",
+    "img/**",
+    "js/**",
+    "*.html"
+  ], {
+    base: "."
+  })
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("style", function() {
