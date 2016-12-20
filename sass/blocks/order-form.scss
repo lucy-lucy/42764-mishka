@@ -178,11 +178,11 @@
 
   &#{&}--tel {
     position: relative;
-    margin-top: 13px;
+    padding-top: 13px;
 
     svg {
       position: absolute;
-      top: -4px;
+      top: 9px;
       right: 8px;
       opacity: 0.2;
     }
@@ -201,12 +201,12 @@
   }
 
   &#{&}--email {
-    margin-top: 12px;
+    padding-top: 12px;
     position: relative;
 
     svg {
       position: absolute;
-      top: -4px;
+      top: 8px;
       right: 4px;
       opacity: 0.2;
     }
@@ -241,7 +241,7 @@
     &#{&}--tel {
 
       svg {
-        top: 1px;
+        top: 14px;
         right: 25px;
       }
     }
@@ -249,7 +249,7 @@
     &#{&}--email {
 
       svg {
-        top: 3px;
+        top: 15px;
         right: 21px;
       }
     }
@@ -272,14 +272,14 @@
 
     &#{&}--tel {
       svg {
-        top: 2px;
+        top: 15px;
         right: 4px;
       }
     }
 
     &#{&}--email {
       svg {
-        top: 2px;
+        top: 14px;
         right: 8px;
       }
     }
