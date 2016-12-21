@@ -70,7 +70,6 @@ gulp.task("symbols", function() {
     inlineSvg: true
   }))
   .pipe(rename("symbols.svg"))
-  .pipe(gulp.dest("img"))
   .pipe(gulp.dest("build/img"));
 });
 

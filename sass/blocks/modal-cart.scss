@@ -6,7 +6,7 @@
   z-index: 100;
 
   width: 260px;
-  margin: 0 auto;
+  margin: auto;
   padding: 45px 30px;
   padding-top: 31px;
   background-color: $bg-white;
@@ -15,7 +15,6 @@
 
   @media #{$tablet-widths} {
     width: 565px;
-    margin: 50px auto;
     padding: 33px 100px;
     padding-bottom: 47px;
     box-sizing: border-box;

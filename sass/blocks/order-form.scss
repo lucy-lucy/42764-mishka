@@ -9,7 +9,6 @@
 
 .order-form__description {
   font-size: $fs-small;
-  // margin-bottom: 16px; // fix
   margin-bottom: 13px;
 
   @media #{$tablet-widths} {
@@ -189,12 +188,14 @@
 
     &:hover {
       svg {
+        opacity: 1;
         fill: $input-fill;
       }
     }
 
     &:active {
       svg {
+        opacity: 1;
         fill: $input-fill;
       }
     }
@@ -213,12 +214,14 @@
 
     &:hover {
       svg {
+        opacity: 1;
         fill: $input-fill;
       }
     }
 
     &:active {
       svg {
+        opacity: 1;
         fill: $input-fill;
       }
     }
