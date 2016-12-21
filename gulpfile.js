@@ -5,7 +5,6 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-// var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var rename = require("gulp-rename");
@@ -36,16 +35,7 @@ gulp.task("style", function() {
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: [
-        "last 1 version",
-        "last 2 Chrome versions",
-        "last 2 Firefox versions",
-        "last 2 Opera versions",
-        "last 2 Edge versions"
-      ]})//,
-      // mqpacker({
-      //   sort: true
-      // })
+      autoprefixer({browsers: ["> 1%"]})
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
