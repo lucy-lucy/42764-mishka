@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/svg4everybody.min.js async"></script>
+    <script src="js/picturefill.min.js async"></script>
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -189,29 +191,7 @@
     </div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9EiNxWxPowJ9d5ukdjdUyqy9ln6peBvQ&callback=initMap" async defer></script>
-    <script>
-      function initMap() {
-        var mishka = {lat: 59.938750, lng: 30.323178};
-        var mishka_fake = {lat: 59.936319, lng: 30.321681};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: mishka_fake,
-          scrollwheel: false,
-          zoom: 16,
-          disableDefaultUI: true
-        });
-        var image = "img/icon-map-pin.svg";
-        var marker = new google.maps.Marker({
-          position: mishka_fake,
-          map: map,
-          icon: image
-        });
-      }
-    </script>
-
-    <script src="js/svg4everybody.min.js"></script>
-    <script>
-      svg4everybody();
-    </script>
+    <script src="js/map.js"></script>
 
   </body>
 </html>
