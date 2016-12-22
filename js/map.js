@@ -13,4 +13,9 @@ function initMap() {
     map: map,
     icon: image
   });
+
+  var defaultMap = document.querySelector(".contacts__map");
+  if(defaultMap) {
+    defaultMap.classList.remove("contacts__map--nojs");
+  }
 }
