@@ -145,11 +145,15 @@
   display: none;
 
   @media #{$tablet-widths} {
+    max-width: 300px;
+    box-sizing: border-box;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
     align-self: stretch;
     padding-right: 50px;
+    padding-left: 10px;
 
     text-align: right;
 

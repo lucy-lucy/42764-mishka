@@ -156,6 +156,8 @@
   &:active {
     width: calc(102px * 0.8);
     height: calc(76px * 0.8);
+    background-size: contain;
+    opacity: 0.3;
   }
 }
 
