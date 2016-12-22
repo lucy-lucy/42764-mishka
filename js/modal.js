@@ -1,4 +1,5 @@
-var modalCart = document.querySelector(".overlay");
+var modalOverlay = document.querySelector(".overlay");
+var modalCart = document.querySelector(".modal-cart");
 var modalNoScroll = document.querySelector("body");
 
 var orderLinkItem = document.querySelector(".featured-item__to-order");
@@ -6,10 +7,10 @@ var orderLinkVideo = document.querySelector(".video__to-order");
 var orderCart = document.querySelectorAll(".catalog_item__add-to-cart");
 
 function showModal(node) {
-  node.addEventListener("click", function(event) {
-    event.preventDefault();
+  node.addEventListener("click", function(e) {
+    e.preventDefault();
     modalNoScroll.classList.add("no-scroll");
-    modalCart.classList.add("overlay--show");
+    modalOverlay.classList.add("overlay--show");
   });
 }
 
@@ -27,19 +28,22 @@ if (orderLinkVideo) {
   showModal(orderLinkVideo);
 }
 
-if(modalCart) {
-  modalCart.addEventListener("click", function(event) {
-    event.preventDefault();
+if(modalOverlay && modalCart) {
+  modalCart.addEventListener("click", function(e) {
+      e.stopPropagation();
+  })
+  modalOverlay.addEventListener("click", function(e) {
+    e.preventDefault();
     modalNoScroll.classList.remove("no-scroll");
-    modalCart.classList.remove("overlay--show");
+    modalOverlay.classList.remove("overlay--show");
   });
 }
 
-window.addEventListener("keydown", function(event) {
-  if (event.keyCode === 27) {
-    if (modalCart.classList.contains("overlay--show") || modalNoScroll.classList.contains("no-scroll")) {
+window.addEventListener("keydown", function(e) {
+  if (e.keyCode === 27) {
+    if (modalOverlay.classList.contains("overlay--show") || modalNoScroll.classList.contains("no-scroll")) {
       modalNoScroll.classList.remove("no-scroll");
-      modalCart.classList.remove("overlay--show");
+      modalOverlay.classList.remove("overlay--show");
     }
   }
 });
